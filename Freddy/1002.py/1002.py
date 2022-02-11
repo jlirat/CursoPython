@@ -1,4 +1,4 @@
-R = round(float(input()),2)
-A = 3.14159 * R**2
-print('A={}'.format(A))
-#no sabemos que falla
+R = float(input())
+n = 3.14159
+A = n * R**2.0
+print("A={0:.4f}".format(A))
