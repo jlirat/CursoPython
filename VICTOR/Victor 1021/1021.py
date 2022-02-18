@@ -24,5 +24,4 @@ moedacinco = dinheiro//0.05
 dinheiro -= moedacinco*0.05
 moedaum = dinheiro//0.01
 dinheiro -= moedaum*0.01
-
 print('NOTAS:\n{:.0f} nota(s) de R$ 100.00\n{:.0f} nota(s) de R$ 50.00\n{:.0f} nota(s) de R$ 20.00\n{:.0f} nota(s) de R$ 10.00\n{:.0f} nota(s) de R$ 5.00\n{:.0f} nota(s) de R$ 2.00\nMOEDAS:\n{:.0f} moeda(s) de R$ 1.00\n{:.0f} moeda(s) de R$ 0.50\n{:.0f} moeda(s) de R$ 0.25\n{:.0f} moeda(s) de R$ 0.10\n{:.0f} moeda(s) de R$ 0.05\n{:.0f} moeda(s) de R$ 0.01'.format(notade100,notade50,notade20,notade10,notade5,notade2,moeda1,moedamed,moedaquarter,moedadies,moedacinco,moedaum))
