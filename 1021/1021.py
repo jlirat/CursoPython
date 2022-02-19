@@ -19,4 +19,4 @@ for n in notas:
     print('{0:.0f} nota(s) de R$ {1:.2f}'.format(notes[n], n))
 print('MOEDAS:')
 for c in coins:
-    print('{0:.0f} nota(s) de R$ {1:.2f}'.format(moedas[str(c)], c))
+    print('{0:.0f} moeda(s) de R$ {1:.2f}'.format(moedas[str(c)], c))
