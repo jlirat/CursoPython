@@ -1,4 +1,5 @@
 dinheiro = float(input())
+#lista de billetes y lista de monedas con los valores establecidos
 notade100 = dinheiro//100
 dinheiro -= notade100 * 100
 notade50 = dinheiro//50
@@ -11,7 +12,7 @@ notade5 = dinheiro//5
 dinheiro -= notade5 * 5
 notade2 = dinheiro//2
 dinheiro -= notade2 * 2
-# monedas
+# monedas 
 moeda1 = dinheiro//1
 dinheiro -= moeda1*1
 moedamed = dinheiro//0.50
