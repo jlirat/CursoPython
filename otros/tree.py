@@ -74,10 +74,14 @@
 # print(esta_cadena[3:5].upper())
 # print(esta_cadena[3:5].lower())
 
-s = input()
-new_s = ''
-for c in s:
-    new_c = ord(c) + 3
-    print("\{}".format(new_c))
-    new_s+=chr(ord(c)+3)
-print(new_s)
+# s = input()
+# new_s = ''
+# for c in s:
+#     new_c = ord(c) + 3
+#     print("\{}".format(new_c))
+#     new_s+=chr(ord(c)+3)
+# print(new_s)
+
+lista = [x * 2 for x in range(1,10)]
+
+
