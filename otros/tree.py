@@ -82,6 +82,25 @@
 #     new_s+=chr(ord(c)+3)
 # print(new_s)
 
-lista = [x * 2 for x in range(1,10)]
+# Criba de eratóstenes
+N = int(input())
+# 1 2 3 4* 5 6* 7 8* 9* 10* 11 12* 13 14* 15* 16* 17 18* 19 20*
+# 2 3 5 7 11 13 17 19
+lista = [False for x in range(0,N+1)] # Listas por comprensión
 
+# print(lista)
+lista2 = []
+for i in range(2, N+1):
+    if lista[i]==False:
+        lista2.append(i)
+        p = i + i
+        while p <= N:
+            lista[p] = True
+            p+=i
+print(lista2)
+
+
+# [False, False, False, False, False]
+#    0      1       2     3      4
+#    1      2       3     4      5
 
