@@ -73,11 +73,22 @@
 # print(esta_cadena)
 # print(esta_cadena[3:5].upper())
 # print(esta_cadena[3:5].lower())
+#Conjetura de Collatz
 
-s = input()
-new_s = ''
-for c in s:
-    new_c = ord(c) + 3
-    print("\{}".format(new_c))
-    new_s+=chr(ord(c)+3)
-print(new_s)
+
+
+def TresNMasUno(N,secuencia):
+        if N & 1 == 1:
+            N = N*3 + 1
+            secuencia.append(N)
+            return N,secuencia
+        else:
+            N = N>>1
+            secuencia.append(N)
+            return N,secuencia
+N = int(input())
+secuencia = []
+while N != 1:
+    N,secuencia = TresNMasUno(N,secuencia)
+    long = len(secuencia)
+print(long)

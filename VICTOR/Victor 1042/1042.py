@@ -1,6 +1,9 @@
-N = input().split()
-count = 0
-arr = []
-while count < 3:
-    if int(N[count]) < int(N[count + 1]):
-        pass
+arr = input().split()
+numberarr = []
+for item in arr:
+    numberarr.append(int(item))
+for i in sorted(numberarr):
+    print(i)
+print('')
+for j in arr:
+    print(j)
